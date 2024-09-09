@@ -1,0 +1,683 @@
+company:
+  charter:
+    _:
+      token_1_circle_y: 257
+      token_2_circle_y: $[${token_1_circle/y} - 53]
+      token_3_circle_y: $[${token_2_circle/y} - 53]
+      token_4_circle_y: $[${token_3_circle/y} - 53]
+      token_5_circle_y: $[${token_4_circle/y} - 53]
+      token_1_text_y: $[${token_1_circle/y} - 27]
+      token_2_text_y: $[${token_2_circle/y} - 27]
+      token_3_text_y: $[${token_3_circle/y} - 27]
+      token_4_text_y: $[${token_4_circle/y} - 27]
+      token_5_text_y: $[${token_5_circle/y} - 27]
+      token_1_text_size: 10
+      token_2_text_size: 10
+      token_3_text_size: 10
+      token_4_text_size: 10
+      token_5_text_size: 10
+      token_1_text_typeface: ${DEFAULT/typeface_italic}
+      token_2_text_text: F40
+      token_3_text_text: F100
+      comment_text_text: ""
+      label_text_size: 11
+      comment_text_x: 130
+      comment_text_size: 10
+      comment_text_typeface: ${DEFAULT/typeface}
+  share:
+    _:
+      type_bar_box_fill: ${colour/wikipedia/golden_yellow}
+      share_num_text_x: 165
+  token:
+    _:
+      short_name_text_size: 8
+
+  index:
+    CFOR:
+      _:
+        long_name_text_text: |
+            CFOR
+        short_name_text_text: CFOR
+        token_1_text_text: D3
+        token_2_text_text: H3
+        token_2_text_typeface: ${DEFAULT/typeface_italic}
+        token_4_text_text: F100
+        token_5_text_text: F100
+        _major_fill: ${colour/hollasch/brown_ochre}
+        _minor_fill: ${colour/wikipedia/white}
+        _related_fill: ${colour/hollasch/brick}
+        name_stripe_box_suppress: False
+      charter:
+        _:
+          label_text_text: |
+            Chemin de fer
+            d’Orléans à Rouen
+        index: $[index_of (1)]
+      share:
+        _:
+          comment_text_text: |
+            Chemin de fer
+            d’Orléans à Rouen
+          comment_text_y: 60
+      token:
+        _:
+          #short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          #center_stripe_box_suppress: True
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (8)]
+
+    Ouest:
+      _:
+        long_name_text_text: |
+            Ouest
+        short_name_text_text: Ouest
+        token_1_text_text: B3
+        token_2_text_text: E6
+        token_2_text_typeface: ${DEFAULT/typeface_italic}
+        token_4_text_text: F100
+        token_5_text_text: F100
+        _major_fill: ${colour/hollasch/cornflower}
+        _minor_fill: ${colour/hollasch/blue}
+        _related_fill: ${colour/hollasch/steel_blue}
+      charter:
+        _:
+          label_text_text: "Chemins de fer de l’Ouest"
+        index: $[index_of (1)]
+      share:
+        _:
+          comment_text_text: |
+            Chemins de fer de l’Ouest
+          comment_text_y: 65
+      token:
+        ELEMENTS: ${TEMPLATE_stripey/.}
+        EMBED_ELEMENTS: ${TEMPLATE_stripey_embed/.}
+        index: $[index_of (8)]
+
+    Nord:
+      _:
+        long_name_text_text: |
+            Nord
+        short_name_text_text: Nord
+        token_1_text_text: D9
+        token_2_text_text: G14
+        token_2_text_typeface: ${DEFAULT/typeface_italic}
+        token_4_text_text: F100
+        _major_fill: ${colour/xxp/M_RED}
+        _minor_fill: ${colour/wikipedia/buff}
+        _major_fill_1: ${_/_major_fill}
+        _major_fill_2: ${_/_minor_fill}
+        _related_fill: ${colour/hollasch/tomato}
+        name_stripe_box_suppress: False
+      charter:
+        _:
+          label_text_text: "Chemins de fer du Nord"
+        index: $[index_of (1)]
+      share:
+        _:
+          comment_text_text: |
+            Chemins de fer du Nord
+          comment_text_y: 65
+      token:
+        _:
+          _rotation: 0
+          _angle: $[360 / 10]
+          #short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          bottom_half_box_fill: ${_/_major_fill}
+          inner_circle_suppress: True
+        ELEMENTS: ${TEMPLATE_wedges/.}
+        EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
+        index: $[index_of (7)]
+
+    AG:
+      _:
+        long_name_text_text: |
+            AG
+        short_name_text_text: AG
+        token_1_text_text: D15
+        token_4_text_text: F100
+        token_5_text_text: F100
+        _major_fill: ${colour/wikipedia/canary_yellow}
+        _minor_fill: ${_/_major_fill}
+        _related_fill: ${colour/wikipedia/icterine}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: |
+            Chemin de fer
+            d'Anvers à Gand
+        index: $[index_of (1)]
+      share:
+        _:
+          comment_text_text: |
+            Chemin de fer
+            d'Anvers à Gand
+          comment_text_y: 60
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 10
+        index: "$[index_of (7)]"
+
+    Est:
+      _:
+        long_name_text_text: |
+            Est
+        short_name_text_text: Est
+        token_1_text_text: I10
+        token_4_text_text: F100
+        token_5_text_text: F100
+        _major_fill: ${colour/wikipedia/amber_sae_ece}
+        _minor_fill: ${colour/x11/white}
+        _related_fill: ${colour/wikipedia/pink_orange}
+      charter:
+        _:
+          label_text_text: "Chemins de fer de l’Est"
+        index: $[index_of (1)]
+      share:
+        _:
+          comment_text_text: |
+            Chemins de fer de l’Est
+          comment_text_y: 65
+      token:
+        _:
+          inner_circle_fill: ${_/_major_fill}
+          inner_circle_radius: 9
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        EMBED_ELEMENTS: ${TEMPLATE_bullseye_embed/.}
+        index: $[index_of (8)]
+
+    PLM:
+      _:
+        long_name_text_text: |
+            PLM
+        short_name_text_text: PLM
+        token_1_text_text: G6
+        token_4_text_text: F100
+        token_5_text_text: F100
+        share_pct_text_fill: ${colour/xxp/BLACK}
+        _major_fill: ${colour/wikipedia/violet_ryb}
+        _minor_fill: ${colour/wikipedia/canary_yellow}
+        _related_fill: ${colour/wikipedia/plum_web}
+        middle_rotate_angle: 135
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+      charter:
+        _:
+          label_text_text: |
+            Chemins de fer de Paris
+            à Lyon et à la Méditerranée
+          label_text_y_inset: 250
+        index: $[index_of (1)]
+      share:
+        _:
+          comment_text_text: |
+            Chemins de fer de Paris
+            à Lyon et à la Méditerranée
+          comment_text_y: 60
+      token:
+        ELEMENTS: ${TEMPLATE_cross/.}
+        EMBED_ELEMENTS: ${TEMPLATE_cross_embed/.}
+        index: $[index_of (8)]
+
+    Belge:
+      _:
+        long_name_text_text: |
+             Belge
+        short_name_text_text: B
+        token_1_text_text: E16
+        _major_fill: ${colour/xxp/D_GREEN}
+        _minor_fill: ${colour/xxp/D_GREEN}
+        _related_fill: ${colour/hollasch/cinnabar_green}
+        name_stripe_box_suppress: True
+      charter:
+        _:
+          label_text_text: |
+            Chemins de fer
+            de l’État belge
+          comment_text_text: |
+            May not redeem shares
+        index: $[index_of (1)]
+      share:
+        _:
+          comment_text_text: |
+            Chemins de fer
+            de l’État belge
+          comment_text_y: 60
+      token:
+        _:
+          short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          short_name_text_size: 20
+          #short_name_text_x_inset: 0
+          short_name_text_y: 15
+        ELEMENTS: ${TEMPLATE_solid/.}
+        EMBED_ELEMENTS: ${TEMPLATE_solid_embed/.}
+        index: $[index_of (6)]
+
+    LF:
+      _:
+        long_name_text_text: |
+          Late French
+        short_name_text_text: LF
+        token_1_text_text: France
+        #name_stripe_box_fill: ${colour/xxp/BLACK}
+        name_stripe_box_suppress: True
+        _related_fill: ${colour/hollasch/pink}
+      charter:
+        _:
+          label_text_text: ""
+          comment_text_text: |
+            Available from brown phase
+        index: $[index_of (1)]
+      share:
+        _:
+          comment_text_text: ""
+          comment_text_y: 65
+      token:
+        _:
+          _major_fill_1: ${colour/hollasch/black}
+          _major_fill_2: ${colour/hollasch/hot_pink}
+          _minor_fill_1: ${_/_major_fill_2}
+          _minor_fill_2: ${_/_major_fill_1}
+          _rotation: 0
+          _angle: $[360 / 10]
+          #short_name_text_fill: $[black_or_white (${_/_major_fill})]
+          inner_circle_suppress: False
+          inner_circle_fill: ${colour/hollasch/pink_light}
+        ELEMENTS: ${TEMPLATE_wedges/.}
+        EMBED_ELEMENTS: ${TEMPLATE_wedges_embed/.}
+        index: $[index_of (6)]
+
+    LB:
+      _:
+        long_name_text_text: |
+          Late Belgian
+        short_name_text_text: LB
+        token_1_text_text: Belgium
+        name_stripe_box_fill: ${colour/xxp/BLACK}
+        _related_fill: ${colour/x11/grey75}
+      charter:
+        _:
+          label_text_text: ""
+          comment_text_text: |
+            Available from brown phase
+        index: $[index_of (1)]
+      share:
+        _:
+          comment_text_text: ""
+          comment_text_y: 65
+      token:
+        _:
+          _major_fill_1: ${colour/x11/grey80}
+          _major_fill_2: ${colour/x11/grey45}
+          _minor_fill_1: ${colour/x11/grey45}
+          _minor_fill_2: ${colour/x11/grey80}
+        ELEMENTS: ${TEMPLATE_chequer/.}
+        EMBED_ELEMENTS: ${TEMPLATE_chequer_embed/.}
+        index: $[index_of (6)]
+
+marker:
+  index:
+    round:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          outer_circle_fill: ${colour/galatolol/yellow}
+          middle_circle_fill: ${colour/galatolol/green}
+          inner_circle_fill: ${colour/galatolol/brown}
+        ELEMENTS: ${TEMPLATE_bullseye/.}
+        index: "$[index_of (1)]"
+
+    ferry:
+      token:
+        _:
+          name_stripe_box_suppress: True
+          short_name_text_text: ferry
+          short_name_text_fill: ${colour/xxp/BLACK}
+          short_name_text_size: 10
+          outer_circle_fill: ${colour/wikipedia/baby_blue}
+          middle_circle_fill: ${colour/wikipedia/white}
+        ELEMENTS: ${TEMPLATE_ring/.}
+        index: "$[index_of (4)]"
+
+private:
+  _:
+    long_name_text_size: 11
+    closes_text_size: 8
+    closes_text_text: "Closes in red phase"
+    power_text_size: 8
+    power_text_y: -1
+    revenue_text_x: 168
+    revenue_text_size: 10
+    cost_text_size: 10
+    asset_interior_box_fill: ${colour/scale/yellow_0}
+    money_bar_box_y: 11
+    money_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    cost_text_fill: ${colour/xxp/BLACK}
+    revenue_text_fill: ${colour/xxp/BLACK}
+    sell_bar_box_suppress: False
+    sell_bar_box_fill: ${colour/wikipedia/bubble_gum}
+    long_name_text_y: 68
+
+  index:
+    P1:
+      _:
+        long_name_text_text: |
+            Ligne de Reims à Charleville
+        power_text_text: |
+            Blocks I14.
+            Once per game owning company
+            may pay F60 to lay a yellow track tile,
+            in addition to regular track actions.
+        sell_text_text: "May be sold for F10 – 40"
+        cost_text_text: "Cost: F20"
+        revenue_text_text: "Revenue: F5"
+        asset_interior_box_fill: ${colour/wikipedia/peach_yellow}
+
+    P2:
+      _:
+        long_name_text_text: |
+            Antwerpen–Rotterdamsche
+            Spoorwegmaatschappij
+        power_text_text: |
+            Revenue of this is equal to F10
+            if owned by a company.
+        sell_text_text: "May be sold for F13 – 50"
+        cost_text_text: "Cost: F25"
+        revenue_text_text: "Revenue: F5 / 10"
+        asset_interior_box_fill: ${colour/wikipedia/peach_orange}
+
+    P3_a:
+      _:
+        long_name_text_text: |
+            Gare de Liège–Guillemins
+        power_text_text: |
+            Blocks H17.
+            Owning company may lay a yellow track tile
+            or upgrade a track tile in Liège (H17), then
+            optionally place a station there for free.
+            Counts as track action and station placement.
+            Doesn't have to be connected.
+        sell_text_text: "May be sold for F25 – 100"
+        cost_text_text: "Cost: F50"
+        revenue_text_text: "Revenue: F10"
+        asset_interior_box_fill: ${colour/wikipedia/moss_green}
+
+    P3_b:
+      _:
+        long_name_text_text: |
+            Station Antwerpen–Centraal
+        power_text_text: |
+            Blocks D17.
+            Owning company may lay a yellow track tile
+            or upgrade a track tile in Antwerpen (D17), then
+            optionally place a station there for free.
+            Counts as track action and station placement.
+            Doesn't have to be connected.
+        sell_text_text: "May be sold for F25 – 100"
+        cost_text_text: "Cost: F50"
+        revenue_text_text: "Revenue: F10"
+        asset_interior_box_fill: ${colour/wikipedia/moss_green}
+
+    P4:
+      _:
+        long_name_text_text: |
+            London shipping
+        power_text_text: |
+            Owning company pays F40 for ferry marker.
+            Owning company may place
+            a station marker in A12.
+            For that company, the revenue of London (A10)
+            is increased by the largest non–London,
+            non–Luxembourg revenue on the route.
+        sell_text_text: "May be sold for F45 – 180"
+        cost_text_text: "Cost: F90"
+        revenue_text_text: "Revenue: F15"
+        asset_interior_box_fill: ${colour/wikipedia/non_photo_blue}
+
+    P5:
+      _:
+        long_name_text_text: |
+            Ligne de Saint–Quentin à Guise
+        power_text_text: |
+            Revenue of this is equal to F70 if
+            Saint–Quentin (G10) is green,
+            to F100 if it is brown,
+            or to F0 otherwise.
+        sell_text_text: "May be sold for F35 – 140 (until red phase)"
+        cost_text_text: "Cost: F70"
+        revenue_text_text: "Revenue: F0 / 70 / 100"
+        closes_text_text: "Closes in purple phase"
+        asset_interior_box_fill: ${colour/wikipedia/brilliant_lavender}
+
+    P6:
+      _:
+        long_name_text_text: |
+            Nord minor shareholding
+        power_text_text: |
+            Comes with a share of the Nord.
+        sell_text_text: "May be sold for F70 – 280"
+        cost_text_text: "Cost: F140"
+        revenue_text_text: "Revenue: F20"
+
+    P7:
+      _:
+        closes_text_text: "Closes when the associated company operates"
+        closes_text_x_inset: -1
+        long_name_text_text: |
+            French major shareholding
+        power_text_text: |
+            Comes with the president's certificate
+            of randomly selected French company
+            (CFOR, Est, Nord, Ouest, or PLM).
+        sell_text_text: "Cannot be sold"
+        cost_text_text: "Cost: F180"
+        revenue_text_text: "Revenue: F40"
+
+    P8:
+      _:
+        closes_text_text: "Closes when the Belge operates"
+        closes_text_x_inset: -1
+        long_name_text_text: |
+            Belge major shareholding
+        power_text_text: |
+            Comes with the president's certificate
+            of the Belge.
+        sell_text_text: "Cannot be sold"
+        cost_text_text: "Cost: F200"
+        revenue_text_text: "Revenue: F60"
+
+    MAY_NOT_REDEEM_SHARES:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/white_smoke}
+        close_bar_box_suppress: true
+        money_bar_box_suppress: true
+        closes_text_text: ""
+        sell_bar_box_suppress: True
+        long_name_text_text: |
+            Starting French company
+        power_text_text: |
+            May not redeem shares
+        cost_text_text: ""
+        revenue_text_text: ""
+      model:
+        index: $[index_of (1)]
+
+train:
+  _:
+    rusted_text_size: 13
+    rusted_text_y: 6
+    rust_bar_box_y: 20
+    long_name_text_y: 95
+
+  index:
+    2T:
+      _:
+        asset_interior_box_fill_p: YELLOW
+        rust_bar_box_fill_p: BLUE
+        rusted_text_text: Rusted by 4
+        long_name_text_text: "2"
+        cost_text_text_p: "F80"
+        note_text_text: |
+            Upgrade to
+            3: F80
+      model:
+        index: $[index_of (7)]
+
+    3T:
+      _:
+        asset_interior_box_fill_p: GREEN
+        rust_bar_box_fill_p: BROWN
+        rusted_text_text: "Rusted by 5+1"
+        long_name_text_text: "3"
+        cost_text_text_p: "F120"
+        note_text_text: |
+            Upgrade to
+            4: F240
+      model:
+        index: $[index_of (5)]
+
+    4T:
+      _:
+        asset_interior_box_fill_p: BLUE
+        rust_bar_box_fill_p: GRAY
+        rusted_text_text: Rusted by 7
+        long_name_text_text: "4"
+        cost_text_text_p: "F300"
+        note_text_text: |
+            Upgrade to
+            5+1: F250
+      model:
+        index: $[index_of (4)]
+
+    5T:
+      _:
+        asset_interior_box_fill_p: BROWN
+        rust_bar_box_fill_p: PURPLE
+        long_name_text_text: "5+1"
+        long_name_text_size: 50
+        rusted_text_text: Rusted by Diesel
+        cost_text_text_p: "F400"
+        note_text_text: |
+            Upgrade to
+            6: F400
+            Diesel: F600
+      model:
+        index: $[index_of (5)]
+
+    6T:
+      _:
+        asset_interior_box_fill_p: RED
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "6"
+        rusted_text_text: Permanent
+        cost_text_text_p: "F600"
+        note_text_text: |
+            Upgrade to
+            7: F400
+            Diesel: F500
+      model:
+        index: $[index_of (2)]
+
+    7T:
+      _:
+        asset_interior_box_fill_p: GRAY
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "7"
+        rusted_text_text: Permanent
+        cost_text_text_p: "F700"
+        note_text_text: |
+            Upgrade to
+            Diesel: F450
+      model:
+        index: $[index_of (3)]
+
+    D:
+      _:
+        asset_interior_box_fill_p: PURPLE
+        rust_bar_box_fill_p: BLACK
+        long_name_text_text: "Diesel"
+        long_name_text_size: 32
+        cost_text_text_p: "F800"
+        rusted_text_text: Permanent
+      model:
+        index: $[index_of (8)]
+
+    p1Pa:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p2Pa:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p3Pa:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p4Pa:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/blue}
+        rust_bar_box_fill: ${colour/wikipedia/red}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p1Pb:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
+        long_name_text_text: "1"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p2Pb:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
+        long_name_text_text: "2"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p3Pb:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
+        long_name_text_text: "3"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
+
+    p4Pb:
+      _:
+        asset_interior_box_fill: ${colour/wikipedia/red}
+        rust_bar_box_fill: ${colour/wikipedia/blue}
+        long_name_text_text: "4"
+        cost_text_text:
+        rusted_text_text:
+      model:
+        index:  "$[index_of (1)]"
