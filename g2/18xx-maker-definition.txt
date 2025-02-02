@@ -1,0 +1,32 @@
+  "tiles": {
+    "G2": {
+      "color": "gray",
+      "quantity": 1,
+      "values": [
+        {
+          "value": 20,
+          "rotate": -30,
+          "angle": 330,
+          "percent": 0.2
+        }
+      ],
+      "towns": [
+        {
+          "angle": 150,
+          "percent": 0.57735,
+          "rotation": 60,
+          "name": {
+            "name": "Houdan",
+            "rotation": 0,
+            "reverse": true
+          }
+        }
+      ],
+      "track": [
+        {
+          "type": "sharp",
+          "side": 3
+        }
+      ]
+    }
+  },
